@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portofolio | Derania</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <a href="#" class="logo">Portofolio Web</a>>
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+        </nav>
+        <nav>
+            <a href="#Home" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skill">Skill</a>
+            <a href="#Portofolio">Portofolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+    <section class="Home" id="Home">
+        <div class="home-img">
+            <img src="img/profil.jpg" alt="Profil Picture">
+        </div>
+        <div class="home-content">
+            <h1>Hi! it's <span>Derania Safa</span></h1>
+            <h3 class="typing-text">I'm a<span></span></h3>
+            <p>Terima kasih sudah datang ke web portofolio ku!</p>
+            <div class="social-icons">
+                <a href="https://github.com/alkanaalkuna" class="fa-brands fa-github"></a>
+                <a href="https://www.instagram.com/sapaahayoo._/profilecard/?igsh=Y2JhN25ya3BzejIz " class="fa-brands fa-instagram"></a>
+                <a href="https://wa.me/+62881022203633" class="fa-brands fa-whatsapp"></a>
+            </div>
+            <a href="#Contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="About">
+        <div class="abt-img">
+            <img src="img/abt.jpg" alt="Foto Derania">
+        </div>
+        <div class="abt">
+            <h4>About Me</h4>
+            <p>Halo! Nama saya <span>Derania Safa Zaina</span>, seorang mahasiswa Teknik Informatika di Universitas Pasundan. Saya memiliki minat besar dalam pengembangan teknologi, khususnya di bidang pengembangan web, kecerdasan buatan, dan pembuatan game.
+                Saya percaya bahwa teknologi dapat menjadi solusi untuk banyak tantangan di dunia, dan saya terus berupaya mengasah kemampuan saya untuk menciptakan solusi inovatif. Saat ini, saya aktif mengerjakan proyek-proyek yang berfokus pada pengembangan
+                web dan selalu terbuka untuk kesempatan belajar dan berkolaborasi. Di luar dunia teknologi, saya juga menikmati mendengarkan musik, memasak, serta menggambar yang membantu saya tetap kreatif dan terinspirasi.</p>
+        </div>
+    </section>
+
+    <section class="skill" id="Skill">
+        <div class="skill-content">
+            <h4>My Skill</h4>
+            <table class="image-table">
+                <tr>
+                    <td>
+                        <img src="img/html.png" alt="HTML Logo">
+                        <p>HTML</p>
+                    </td>
+                    <td>
+                        <img src="img/css.png" alt="CSS Logo">
+                        <p>CSS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/excell.jpg" alt="Excel Logo">
+                        <p>Excel</p>
+                    </td>
+                    <td>
+                        <img src="img/wordd.jpg" alt="Word Logo">
+                        <p>Word</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="portofolio" id="Portofolio">
+        <h2 class="section-title">Portofolio Saya</h2>
+        <div class="portofolio-container">
+            <div class="portofolio-item">
+                <img src="img/github.png" alt="Proyek 1">
+                <h3>Proyek 1</h3>
+                <p>Website pribadi untuk menampilkan portofolio, informasi diri, dan kontak.</p>
+            </div>
+    </section>
+
+    <section class="contact-section" id="Contact">
+        <h2 class="section-title">Kontak Saya</h2>
+        <p class="contact-description">Hubungi saya melalui formulir di bawah ini atau media sosial.</p>
+        <form action="#" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn">Kirim</button>
+            </div>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
