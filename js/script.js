@@ -1,8 +1,6 @@
-// Select elements
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+const menuToggle = document.querySelector(".menu-toggle input");
+const nav = document.querySelector("nav ul");
 
-// Toggle menu visibility
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+menuToggle.addEventListener("change", function() {
+    nav.classList.toggle("slide", menuToggle.checked);
 });

@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Portofolio | Derania</title>
+    <title>Portofolio | Derania Safa</title>
 </head>
 
 <body>
     <header>
         <!-- Navbar -->
-        <a href="#" class="logo">Portofolio Web</a>>
-        <button class="hamburger" id="hamburger">
-            ☰
-        </button>
-        </nav>
         <nav>
-            <a href="#Home" class="active">Home</a>
-            <a href="#About">About</a>
-            <a href="#Skill">Skill</a>
-            <a href="#Portofolio">Portofolio</a>
-            <a href="#Contact">Contact</a>
+            <div class="logo">Portofolio Web</div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skill">Skill</a></li>
+                <li><a href="#Portofolio">Portofolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -92,11 +96,15 @@
                 <h3>Proyek 1</h3>
                 <p>Website pribadi untuk menampilkan portofolio, informasi diri, dan kontak.</p>
             </div>
+        </div>
     </section>
 
-    <section class="contact-section" id="Contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
         <h2 class="section-title">Kontak Saya</h2>
         <p class="contact-description">Hubungi saya melalui formulir di bawah ini atau media sosial.</p>
+
+        <!-- Contact Form -->
         <form action="#" class="contact-form">
             <div class="form-group">
                 <label for="name">Nama</label>
@@ -110,12 +118,14 @@
                 <label for="message">Pesan</label>
                 <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda" required></textarea>
             </div>
-            <div class="button">
-                <button type="submit" class="btn">Kirim</button>
-            </div>
+            <button type="submit" class="btn">Kirim</button>
         </form>
-    </section>
-    <script src="js/script.js"></script>
+
+
+
+
+
+        <script src="js/script.js"></script>
 
 </body>
 
