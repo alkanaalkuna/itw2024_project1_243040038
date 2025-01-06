@@ -12,7 +12,7 @@
 // });
 
 /** creating button click show hide navbar **/
-const menuToggle = document.querySelector(".menu-toggle input");
+const menuToggle = document.querySelector(".menu-toggler input");
 const nav = document.querySelector("nav ul");
 
 menuToggle.addEventListener("click", function() {

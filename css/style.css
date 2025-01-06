@@ -22,84 +22,57 @@
         background-color: #47578f;
         color: white;
     }
-    /* hanya coba */
     /* NAVBAR */
     
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 1rem 9%;
-        background-color: #76679a;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1000;
-    }
-    
-    .logo {
-        font-size: 3rem;
-        color: #ffffff;
-        font-weight: 800;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
-    
-    .logo:hover {
-        transform: scale(1.1);
-    }
-    /* Navbar */
-    
     nav {
+        position: fixed;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
         width: 100%;
+        background-color: rgb(143, 93, 191);
+        justify-content: space-around;
+        /*padding: 20px 0;*/
+        color: blanchedalmond;
+        height: 40px;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    nav .logo {
+        font-family: "Pacifico", cursive;
+        letter-spacing: 3px;
+    }
+    
+    .logo h4 {
+        font-size: 1.4em;
     }
     
     nav ul {
         display: flex;
         list-style: none;
-        gap: 2rem;
-        margin-left: auto;
+        width: 40%;
+        justify-content: space-between;
     }
     
     nav ul li a {
+        color: blanchedalmond;
         text-decoration: none;
-        color: white;
-        font-size: 1.8rem;
-        transition: color 0.3s ease, border-bottom 0.3s ease;
-        border-bottom: 2px solid transparent;
+        font-size: 1.4em;
     }
     
-    nav ul li a:hover,
-    nav ul li a.active {
-        color: #17415d;
-        border-bottom: 2px solid #17415d;
+    nav ul li a:hover {
+        color: aliceblue;
     }
-    /* Hamburger Menu */
+    /*hamburger*/
     
-    .menu-toggle {
+    .menu-toggler {
         display: none;
         flex-direction: column;
         height: 20px;
         justify-content: space-between;
-        cursor: pointer;
-        z-index: 1001;
+        position: relative;
     }
     
-    .menu-toggle span {
-        display: block;
-        width: 28px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 3px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-    
-    .menu-toggle input {
+    .menu-toggler input {
         position: absolute;
         width: 40px;
         height: 28px;
@@ -110,42 +83,73 @@
         z-index: 2;
     }
     
-    .menu-toggle input:checked~span:nth-child(2) {
+    .menu-toggler span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        transition: all 0.5s;
+    }
+    /*hamburger menu animation*/
+    
+    .menu-toggler span:nth-child(2) {
+        transform-origin: 0 0;
+    }
+    
+    .menu-toggler span:nth-child(4) {
+        transform-origin: 0 100%;
+    }
+    
+    .menu-toggler input:checked~ :nth-child(2) {
         transform: rotate(45deg) translate(-1px, -1px);
+        background-color: white;
     }
     
-    .menu-toggle input:checked~span:nth-child(3) {
-        transform: rotate(-45deg) translate(-1px, 0);
+    .menu-toggler input:checked~ :nth-child(4) {
+        transform: rotate(-45deg) translate(-1px, 0px);
+        background-color: white;
     }
     
-    .menu-toggle input:checked~span:nth-child(1) {
+    .menu-toggler input:checked~ :nth-child(3) {
+        transform: scale(0);
         opacity: 0;
     }
-    /* Menu Toggle Animation */
-    
-    nav ul {
-        display: flex;
-        list-style: none;
-        gap: 2rem;
-    }
+    /*responsive breakpoint*/
+    /*ukuran tablet*/
     
     @media screen and (max-width: 768px) {
         nav ul {
-            flex-direction: column;
-            position: fixed;
-            top: 70px;
-            right: -100%;
-            width: 80%;
+            width: 50%;
+        }
+    }
+    /*ukuran mobile*/
+    
+    @media screen and (max-width: 576px) {
+        .menu-toggler {
+            display: flex;
+        }
+        nav ul li a {
+            font-size: 2em;
+        }
+        nav ul {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40%;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.9);
-            padding-top: 2rem;
-            transition: right 0.3s ease;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(40, 6, 72);
+            z-index: -1;
+            transform: translateX(100%);
+            transition: all 1s;
+            opacity: 0;
         }
         nav ul.slide {
-            right: 0;
-        }
-        .menu-toggle {
-            display: flex;
+            opacity: 2;
+            transform: translateX(0%);
         }
     }
     /* Styling untuk Section */
@@ -305,6 +309,10 @@
     /* Home Section - ends */
     /* About Section */
     
+    .container-abt {
+        display: flex;
+    }
+    
     .abt-img {
         align-items: center;
         justify-content: end;
@@ -323,6 +331,7 @@
         margin-top: 2%;
         cursor: pointer;
         transition: transform 6s linear;
+        align-items: center;
     }
     
     .abt-img:hover {
@@ -365,6 +374,20 @@
         font-size: 1.6rem;
         color: white;
         text-align: justify;
+    }
+    
+    @media (max-width: 997px) {
+        .container-abt {
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+        .abt-img img {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: auto;
+        }
     }
     /* About Section - ends */
     /* Skill Section */
