@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="css/style.css">
     <title>Portofolio | Derania Safa</title>
 </head>
 
 <body>
+    <!-- Navbar -->
     <header>
-        <!-- Navbar -->
         <nav>
             <div class="logo">Portofolio Web</div>
             <ul>
@@ -22,7 +25,7 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
             <div class="menu-toggle">
-                <input type="checkbox" />
+                <input type="checkbox" id="menu-toggle" />
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,7 +33,9 @@
         </nav>
     </header>
 
+
     <!-- Sections -->
+    <!-- Home Section -->
     <section class="Home" id="Home">
         <div class="home-img">
             <img src="img/profil.jpg" alt="Profil Picture">
@@ -48,6 +53,8 @@
         </div>
     </section>
 
+    <!-- About Section -->
+
     <section class="about" id="About">
         <div class="abt-img">
             <img src="img/abt.jpg" alt="Foto Derania">
@@ -59,6 +66,8 @@
                 web dan selalu terbuka untuk kesempatan belajar dan berkolaborasi. Di luar dunia teknologi, saya juga menikmati mendengarkan musik, memasak, serta menggambar yang membantu saya tetap kreatif dan terinspirasi.</p>
         </div>
     </section>
+
+    <!-- Skills Section -->
 
     <section class="skill" id="Skill">
         <div class="skill-content">
@@ -88,6 +97,8 @@
         </div>
     </section>
 
+    <!-- Portofolio Section -->
+
     <section class="portofolio" id="Portofolio">
         <h2 class="section-title">Portofolio Saya</h2>
         <div class="portofolio-container">
@@ -100,7 +111,8 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+
+    <section id="Contact" class="contact">
         <h2 class="section-title">Kontak Saya</h2>
         <p class="contact-description">Hubungi saya melalui formulir di bawah ini atau media sosial.</p>
 
@@ -121,11 +133,15 @@
             <button type="submit" class="btn">Kirim</button>
         </form>
 
-
-
+        <!-- Copyright -->
+        <div class="footer">
+            <p class="copy">&copy; 2024.deraniasafazaina</p>
+        </div>
 
 
         <script src="js/script.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </body>
 
