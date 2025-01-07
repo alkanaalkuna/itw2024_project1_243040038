@@ -28,22 +28,28 @@
         position: fixed;
         display: flex;
         width: 100%;
-        background-color: rgb(143, 93, 191);
+        background-color: rgb(68, 44, 90);
         justify-content: space-around;
         /*padding: 20px 0;*/
-        color: blanchedalmond;
-        height: 40px;
+        color: rgb(247, 246, 245);
+        height: 7rem;
         align-items: center;
         cursor: pointer;
     }
     
     nav .logo {
-        font-family: "Pacifico", cursive;
+        font-family: "Poppins", sans-serif;
         letter-spacing: 3px;
     }
     
     .logo h4 {
-        font-size: 1.4em;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .logo:hover {
+        transform: scale(1.1);
     }
     
     nav ul {
@@ -57,6 +63,8 @@
         color: blanchedalmond;
         text-decoration: none;
         font-size: 1.4em;
+        transition: color 0.3s ease;
+        border-bottom: 0.3s ease;
     }
     
     nav ul li a:hover {
@@ -433,7 +441,7 @@
     
     .portofolio-section {
         padding: 50px 20px;
-        background-color: rgb(54, 114, 192);
+        background-color: rgb(53, 112, 189);
         text-align: center;
     }
     
@@ -453,8 +461,8 @@
     }
     
     .portofolio-item {
-        background-color: #fff;
-        border: 1px solid #ddd;
+        background-color: #2d2042;
+        border: 1px solid #304b6c;
         padding: 20px;
         width: 300px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -471,11 +479,11 @@
     
     .portofolio-item h3 {
         margin: 15px 0;
-        color: #333;
+        color: #fdf9f9;
     }
     
     .portofolio-item p {
-        color: #666;
+        color: #fffdfd;
     }
     
     .portofolio-item:hover {
@@ -485,98 +493,83 @@
     /* Contact section */
     
     .contact-section {
-        padding: 5rem 10%;
+        padding: 50px 20px;
         background-color: rgb(72, 118, 177);
-        color: white;
         text-align: center;
     }
     
     .section-title {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        color: white;
-    }
-    
-    .contact-description {
-        font-size: 1.8rem;
-        text-align: center;
-        margin-bottom: 3rem;
+        font-size: 2em;
+        margin-bottom: 20px;
         color: #ddd;
     }
     
+    .contact-description {
+        font-size: 1em;
+        margin-bottom: 30px;
+        color: black;
+    }
+    
     .contact-form {
-        max-width: 350px;
+        max-width: 600px;
         margin: 0 auto;
-        background-color: #fff;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        color: #333;
         text-align: left;
     }
     
     .form-group {
-        margin-bottom: 2rem;
+        margin-bottom: 20px;
     }
     
-    .contact-form .form-group label {
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
+    .form-group label {
         display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
     }
     
-    .contact-form .form-group input,
-    .contact-form .form-group textarea {
+    .form-group input,
+    .form-group textarea {
         width: 100%;
-        padding: 1.5rem;
-        font-size: 1.4rem;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        resize: none;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
     }
     
-    .contact-form .form-group input:focus,
-    .contact-form .form-group textarea:focus {
-        border-color: #17415d;
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #007BFF;
         outline: none;
-        box-shadow: 0 0 5px rgba(23, 65, 93, 0.5);
     }
     
-    .contact-form .button {
-        text-align: right;
-    }
-    
-    .contact-form .btn {
-        padding: 1.5rem 3rem;
-        background-color: #17415d;
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
         color: white;
         border: none;
-        font-size: 1.6rem;
-        font-weight: 600;
-        border-radius: 6px;
+        border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
     }
     
-    .contact-form .btn:hover {
-        background-color: #47578f;
-        transform: scale(1.05);
+    .btn:hover {
+        background-color: #0056b3;
     }
     
     .social-links {
-        margin-top: 4rem;
+        margin-top: 30px;
     }
     
     .social-links a {
-        color: white;
-        margin: 0 1rem;
-        font-size: 2rem;
-        transition: color 0.3s ease;
+        color: #007BFF;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 1em;
     }
     
     .social-links a:hover {
-        color: #17415d;
+        text-decoration: underline;
     }
     
     .footer {
